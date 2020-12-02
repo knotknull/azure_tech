@@ -1,5 +1,38 @@
 Microsoft Azure Architect Technologies
 --------------------------------------
+##############################################################################
+## Build great solutions with the Microsoft Azure Well Architected Framework
+##############################################################################
+https://docs.microsoft.com/en-us/learn/paths/azure-well-architected-framework/
+
+## Azure Well-Architected Framework pillars
+##
+5 Pillars
+ - Cost Optimization
+ - Operational excellence
+ - Performance efficiency
+ - Reliability
+ - Security
+
+# Cost Optimization: ^-Quality ^-Speed  ^-Efficiency   v-Cost
+
+# Operational Excellence
+  - modern dev practices for faster development / automation
+
+# Performance efficiency
+  - adjust resources for performance and scalability
+
+# Reliability
+  - anticipate failures in design
+
+# Security
+  - secure data via authentication / encryption
+
+## Cost Optimization
+##
+
+Last Here:
+https://docs.microsoft.com/en-us/learn/modules/azure-well-architected-introduction/3-cost-optimization
 
 
 
@@ -9,15 +42,10 @@ Microsoft Azure Architect Technologies
 
 
 
+Pluralsight:
+[ Implementing and Managing Microsoft Azure Mult-factor Authentication ]
 
-
-
-
-
-
-
-
-
+# Understanding Azure MFA
 
 
 
