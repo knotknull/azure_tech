@@ -31,21 +31,121 @@ https://docs.microsoft.com/en-us/learn/paths/azure-well-architected-framework/
 ## Cost Optimization
 ##
 
+ - Plan and estiamate costs
+    - requirements need to be identified
+
+ - Provision w/ optimization
+    - Move from IaaS to PaaS where possible
+
+ - Monitoring and analytics for cost insights
+
+ - Maximize efficiency of cloud spend
+    - reduce idle resources
+    - paying twice for licenses, etc.
+    - manually / dynamically adjust resourcing
+
+
+## Operational Excellence
+##
+  - full visibility into how app is running
+  - dev and release practices agile
+        - Infra as code
+        - automate testing / build
+  - culture of sharing, collaboration and transparency
+  - use monitoring analytics to gain op insights
+        - monitoring, logging and instrumentation
+  - automate to reduce effort and error
+
+
+## Performance Efficiency
+##
+
+
 Last Here:
-https://docs.microsoft.com/en-us/learn/modules/azure-well-architected-introduction/3-cost-optimization
-
-
-
-
-
+https://docs.microsoft.com/en-us/learn/modules/azure-well-architected-introduction/5-performance-efficiency
 
 
 
 
 Pluralsight:
-[ Implementing and Managing Microsoft Azure Mult-factor Authentication ]
 
-# Understanding Azure MFA
+New Plan for Azure Architect Technologies:
+NOTE: 303 and 304 (new tests forAzure Architect Technologies and Azure Architect Design)
+is still being built out, until that is fully up go thru 300 Azure Architect
+Technologies videos in this order
+
+https://app.pluralsight.com/library/courses/
+
+microsoft-azure-virtual-machine-deployings            | begginer
+microsoft-azure-storage-solution-choosing             | beginner
+microsoft-azure-appropriate-compute-solution-choosing | beginner
+microsoft-azure-implement-manage-virtual-networks     | beginner
+microsoft-azure-iot-solutions-creating                | beginner
+microsoft-azure-developer-creating-integrating-ai-services-update | beginner
+microsoft-azure-batch-getting-starte                  | beginner
+azure-service-fabric-programming-models               | beginner
+
+
+microsoft-azure-containers-deploying-managing               | intermediate
+microsoft-azure-enterprise-messaging-eventing               | intermediate
+microsoft-azure-authentication-scenarios-developers         | intermediate
+microsoft-bot-framework-building-bots-getting-started-2019  | intermediate
+microsoft-azure-appropriate-integration-solution-identifying| intermediate
+microsoft-azure-implementing-web-mobile-services-update     | intermediate
+microsoft-azure-connecting-virtual-networks                 | intermediate
+
+microsoft-azure-serverless-computing-configurings     | advanced
+microsoft-azure-data-securing                         | advanced
+microsoft-azure-migrating-physical-virtual-servers-update | advanced
+microsoft-azure-deploying-multiple-virtual-machine    | advanceds
+microsoft-azure-autoscaling-developing                | advanced
+
+microsoft-azure-multi-factor-authentication-implementing-managing | intermediate
+microsoft-azure-active-directory-managing-identities  | intermediate
+microsoft-azure-hybrid-identity-overview              | intermediate
+microsoft-azure-role-based-access-control-managing    | intermediate
+microsoft-azure-resources-workloads-monitoring-update | intermediate
+microsoft-azure-creating-configuring-storage-accounts | intermediate
+
+
+##############################################################################
+## Deploying a Virtual Machine in  great solutions with the Microsoft Azure
+##############################################################################
+https://app.pluralsight.com/library/courses/microsoft-azure-virtual-machine-deployings
+
+
+## Rightsize Virtual Machines
+
+  - Azure Compute Unit (ACU)
+    100 = Small (Standard A1) VM
+      A = Family
+      1 = Size (versioned)
+      DS_V3 = 160 - 190 ACU
+
+## Compute sizes
+
+General Purpose : Balanced CPU to memory ratio (test / dev, small-med db, low-med web)
+ - B, Dsv3, Dv3, DSv2, Dv2, DS, D, Av2, A0-7
+
+Compute Optimized: High CPU to memory ratio (med web, app server, batch process )
+ - Fsv2, Fs, F
+
+Memory Optimized: High memory to  CPU ratio (relational db, med - large cache, in-mem analytics )
+ - Esv3, Ev3, M, GS, G, DSv2, DS, Dv2, D
+
+Storage Optimized: High disk throuput and IS (Big Data, SQL, NoSQL )
+ - Ls
+
+GPU : Specialized for graphics rendeing, deep learning
+ - NV, NC, NCv2, NCv3, ND
+
+High performance compute : Fastest most powerful CPU, high throughput Netrwork (RDMA) 
+ - H, A8-11
+
+
+
+
+
 
 
 
