@@ -59,11 +59,19 @@ https://docs.microsoft.com/en-us/learn/paths/azure-well-architected-framework/
 
 ## Performance Efficiency
 ##
+ - matching resources that are available w/ demand it is receiving
+  - scale up
+  - scale out
+  - autoscaling
+  - optimize network performance (add messaging layer)
+  - optimize storage performance  (partitioning / caching)
+
+
+
 
 
 Last Here:
-https://docs.microsoft.com/en-us/learn/modules/azure-well-architected-introduction/5-performance-efficiency
-
+https://docs.microsoft.com/en-us/learn/modules/azure-well-architected-introduction/6-reliability
 
 
 
@@ -115,6 +123,7 @@ https://app.pluralsight.com/library/courses/microsoft-azure-virtual-machine-depl
 
 
 ## Rightsize Virtual Machines
+##
 
   - Azure Compute Unit (ACU)
     100 = Small (Standard A1) VM
@@ -123,6 +132,7 @@ https://app.pluralsight.com/library/courses/microsoft-azure-virtual-machine-depl
       DS_V3 = 160 - 190 ACU
 
 ## Compute sizes
+##
 
 General Purpose : Balanced CPU to memory ratio (test / dev, small-med db, low-med web)
  - B, Dsv3, Dv3, DSv2, Dv2, DS, D, Av2, A0-7
@@ -139,8 +149,98 @@ Storage Optimized: High disk throuput and IS (Big Data, SQL, NoSQL )
 GPU : Specialized for graphics rendeing, deep learning
  - NV, NC, NCv2, NCv3, ND
 
-High performance compute : Fastest most powerful CPU, high throughput Netrwork (RDMA) 
+High performance compute : Fastest most powerful CPU, high throughput Netrwork (RDMA)
  - H, A8-11
+
+
+## Standard vs. Premium Disks
+##
+      Standard                              Premium
+- backed by HDDs                      - Backed by high-speed SSD
+- Stored in Azure Account             - IOPS values are predictable,
+- Std SSD (preview) available in        expected performance levels
+  managed disks (dev/test/            - Prepay for all storage used
+          entry level prod)               (fixed disk sizes)
+- Std Storage provides maximum              P10, 128 GB, 500 IOPS, 50 MB/s
+  IOPS values for each VHD (virt HDD)
+[ Generation 1.VHD ]
+
+## Managed vs. Unmanaged Disks
+##
+      UnManaged                              Managed
+- Original method store VM VHDs             - Azure manages disks, don't have to
+- VHDs stored as page blobs in                worry about storage account or IOPS restrictions
+  Azure storage account                     - Pre-pay for disk size (no need for stog acct)
+- Max 256 TB *** storage per VM                 S10, 128 GB, 500 IOS, 60MB/S
+- Need to manage storage account            - Supports Std / Prem SSD and Std HDD
+  availability                              - Easier to create snapshots / disk images
+- 20,000 IOPS limit across all VM disks
+  in a standard storag acct
+
+# Sizes for virtual Machines
+https://docs.microsoft.com/en-us/azure/virtual-machines/sizes
+
+# Azure VM Chooser
+azurevmchooser.kvaes.be   (404)
+
+Microsoft Azure Storage Explorer
+  - software for storage accounts / un-managed disks
+
+
+## Designing Virtual Network Environment
+##
+
+Network Resource Provider
+
+- Virtual Network
+    -  All VMs withing vnet can communicate with each other
+    -  VMs in separate vnets cannot communicate by default
+
+- Address Space / subnet (IPv4 range)
+    - subnet of VNet
+
+- Virtual Network Interface Card
+  IP address bound to VNIC and not the VM
+    - VNIC can have private IP from VNet and possible public IP
+
+Powershell >> az interactive (Azure CLI v2)  / cross platform python app
+NOTE: also available under bash!!
+
+NOTE: to change settings (i.e. JSON output) type: az configure
+
+> az network vnet create ....
+
+
+## Plan for VM High Availability
+##
+2 ways for high availability
+
+ [ Availability Set ]         [ Availability Zone ]
+
+Availability Set:
+  - Server level fault tolerance within a single data center in an Azure Region
+Fault Domain (Server Rack)
+  - assign multiple nodes of app (i.e. web servers) to same Availability Set
+  - Azure will assign them do different Fault Domains (racks)
+
+Update Domain:
+  - deploy separate VMS on separate hardware hosts
+
+- 99.95% availability SLA with availability sets   ***
+  NOTE: Must assign availability set at VM deployment
+
+- 99.9% availability single-instance SLA with premium storage ***
+
+
+
+Availability Zone:
+- place redundant VMs in separate data centers (within same region)
+  NOTE: Not every region has multiple Availability Zones
+
+
+
+
+
 
 
 
