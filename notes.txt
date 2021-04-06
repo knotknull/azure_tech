@@ -82,6 +82,52 @@ NOTE: 303 and 304 (new tests forAzure Architect Technologies and Azure Architect
 is still being built out, until that is fully up go thru 300 Azure Architect
 Technologies videos in this order
 
+
+
+Channels > My Channels > Azure Architect Technologies
+31 Hours
+# Implement and Monitor an Azure Infrastructure :
+ ✓ Cloud Certifications: Microsoft Azure AZ-303 and AZ-304 Exam Requirement Changes
+ - Microsoft Azure Solutions Architect: Introduction to the AZ-303 Exam       16 min
+ - Microsoft Azure Solutions Architect: Implement a Cloud Infrastructure Monitoring Strategy  73 min
+ - Microsoft Azure Solutions Architect: Implement a Storage Strategy  73 min
+ - Lab: Manage Storage Accounts on Azure:   60 min
+ - Lab: Configure Azure Files Storage :     45 min
+ - Lab: Configure Azure Blog Storage  :     45 min
+ - Microsoft Azure Solutions Architect: Implement a Virtual Machine Strategy  73 min
+ - Lab: Create and Configure Virtual Machines on Azure :     95 min
+ - Lab: Configure VMs for High Availability and Scalability on Azure :  120 min
+ - Microsoft Azure Solutions Architect: Implement an Automation Strategy for Resource Deployment 43 min
+ - Lab: Automate Deployment and Configuration of VMs with Azure Resource Manager: 40 min
+ - Microsoft Azure Solutions Architect: Implement a Virtual Networking Strategy:  24 min
+ - Lab: Implement and Manage Virtual Networking on Azure : 145 min
+ - Microsoft Azure Solutions Architect: Implement an Azure Active Directory Strategy:  24 min
+ - Microsoft Azure Solutions Architect: Implement a Hybrid Identities Strategy :  44 min
+
+
+# Implement Management and Security Solutions :
+ - Microsoft Azure Solutions Architect: Implement a Workload Management Strategy: 83 min
+ - Lab: Perform Backup and Recovery on Azure: 60 min
+ - Microsoft Azure Solutions Architect: Implement a Load Balancing and Networking Security Strategy:   92 min
+ - Lab: Configure a Load Balancer on Microsoft Azure : 60 min
+ - Microsoft Azure Solutions Architect: Implement a Governance Strategy:   75 min
+ - Microsoft Azure Solutions Architect: Implement an Application Security Strategy:   79 min
+
+# Implement Solutions for Apps :
+ - Microsoft Azure Solutions Architect: Implement an Application Infrastructure Strategy:   42 min
+ - Lab: Create and Configure Web Apps on Azure App Services : 20 min
+ - Lab: Create a Custom Connector for Microsoft Azure Logic Apps : 80 min
+ - Lab: Create and Configure Azure Functions: 75 min
+ - Microsoft Azure Solutions Architect: Implement a a Containerization Strategy:  51 min
+
+# Implement and Manage Data Platforms :
+ - Microsoft Azure Solutions Architect: Implement a NoSQL Databases Strategy:       56 min
+ - Microsoft Azure Solutions Architect: Implement an Azure SQL Databases Strategy:  67 min
+
+# Preparing for the AZ-303 Exam:
+ - Microsoft Azure Solutions Architect: Preparing for the AZ-303 Exam:  39 min
+
+
 https://app.pluralsight.com/library/courses/
 
 microsoft-azure-virtual-machine-deployings            | begginer
